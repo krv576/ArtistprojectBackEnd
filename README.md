@@ -24,7 +24,7 @@ This is the artist Project repository for the back end
     - [x] Get top artists
 - [x] Rishwanth Katpally
     - [x] Update artist By Id
-- [ ] Sahithi Kommineni
-    - [ ] Delete artist By Id
-    - [ ] Delete all artists
+- [x] Sahithi Kommineni
+    - [x] Delete artist By Id
+    - [x] Delete all artists
 
