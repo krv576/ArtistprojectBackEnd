@@ -3,12 +3,12 @@ module.exports = app => {
   var router = require("express").Router();
   // Create a new Artist
   router.post("/", artists.create);
+  // Retrieve all top Artists
+  router.get("/top", artists.findAllTopArtists);
   // Retrieve all Artists
   router.get("/", artists.findAll);
   // Retrieve a single Artist with id
   router.get("/:id", artists.findOne);
-  // Retrieve all top Artists
-  router.get("/top", artists.findAllTopArtists);
   // Update a Artist with id
   router.put("/:id", artists.update);
   // Delete a Artist with id
