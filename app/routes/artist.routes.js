@@ -11,5 +11,9 @@ module.exports = app => {
   router.get("/top", artists.findAllTopArtists);
   // Update a Artist with id
   router.put("/:id", artists.update);
+  // Delete a Artist with id
+  router.delete("/:id", artists.delete);
+  // Delete all Artists
+  router.delete("/", artists.deleteAll);
   app.use('/api/artists', router);
 };
