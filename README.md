@@ -28,3 +28,15 @@ This is the artist Project repository for the back end
     - [x] Delete artist By Id
     - [x] Delete all artists
 
+## Genres ✓
+- [ ] Rishik vardhan
+    - [ ] Create genre
+- [ ] Shashi Preetham Ganta
+    - [ ] Get all genres
+- [ ] Rishwanth Katpally
+    - [ ] Update genre By Id
+- [ ] Sahithi Kommineni
+    - [ ] Get genre By Id
+    - [ ] Delete genre By Id
+- [ ] Nagarjuna Reddy Potlapalli
+    - [ ] Delete all genres
