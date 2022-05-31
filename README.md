@@ -12,7 +12,7 @@ This is the artist Project repository for the back end
     - [✓] Create index.js
 - [✓] Rishwanth Katpally
     - [✓] Create packages models, controllers, routes
-    - [✓] Create .gitignore
+    - [x] Create .gitignore
 
 ## Artists ✓
 - [ ] Nagarjuna  Reddy Potlapalli
