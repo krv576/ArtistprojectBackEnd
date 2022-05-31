@@ -20,8 +20,8 @@ This is the artist Project repository for the back end
 - [x] Rishik vardhan
     - [x] Get all artists
     - [x] Get artist By Id
-- [ ] Shashi Preetham Ganta
-    - [ ] Get top artists
+- [x] Shashi Preetham Ganta
+    - [x] Get top artists
 - [ ] Rishwanth Katpally
     - [ ] Update artist By Id
 - [ ] Sahithi Kommineni

@@ -7,5 +7,7 @@ module.exports = app => {
   router.get("/", artists.findAll);
   // Retrieve a single Artist with id
   router.get("/:id", artists.findOne);
+  // Retrieve all top Artists
+  router.get("/top", artists.findAllTopArtists);
   app.use('/api/artists', router);
 };

@@ -61,3 +61,16 @@ exports.findOne = (req, res) => {
       });
     });
 };
+// Find all top Artists
+exports.findAllTopArtists = (req, res) => {
+  Artist.findAll({ where: { top: true } })
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving top artists."
+      });
+    });
+};
