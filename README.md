@@ -15,8 +15,8 @@ This is the artist Project repository for the back end
     - [x] Create .gitignore
 
 ## Artists ✓
-- [ ] Nagarjuna  Reddy Potlapalli
-    - [ ] Create artist
+- [x] Nagarjuna  Reddy Potlapalli
+    - [x] Create artist
 - [ ] Rishik vardhan
     - [ ] Get all artists
     - [ ] Get artist By Id
