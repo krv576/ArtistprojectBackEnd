@@ -3,5 +3,7 @@ module.exports = app => {
   var router = require("express").Router();
   // Create a new Artist
   router.post("/", artists.create);
+  // Retrieve all top Artists
+  router.get("/top", artists.findAllTopArtists);
   app.use('/api/artists', router);
 };
