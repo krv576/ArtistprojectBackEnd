@@ -2,16 +2,16 @@
 This is the artist Project repository for the back end
 
 ## Project Setup ✓
-- [✓] Sahithi Kommineni
-    - [✓] Add dependencies mysql, sequelize, express, cors
-- [✓] Nagarjuna  Reddy Potlapalli
-    - [✓] Create db.config.js
-- [✓] Rishik vardhan
-    - [✓] Create server.js 
-- [✓] Shashi Preetham Ganta
-    - [✓] Create index.js
-- [✓] Rishwanth Katpally
-    - [✓] Create packages models, controllers, routes
+- [x] Sahithi Kommineni
+    - [x] Add dependencies mysql, sequelize, express, cors
+- [x] Nagarjuna  Reddy Potlapalli
+    - [x] Create db.config.js
+- [x] Rishik vardhan
+    - [x] Create server.js 
+- [x] Shashi Preetham Ganta
+    - [x] Create index.js
+- [x] Rishwanth Katpally
+    - [x] Create packages models, controllers, routes
     - [x] Create .gitignore
 
 ## Artists ✓
