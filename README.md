@@ -17,9 +17,9 @@ This is the artist Project repository for the back end
 ## Artists ✓
 - [x] Nagarjuna  Reddy Potlapalli
     - [x] Create artist
-- [ ] Rishik vardhan
-    - [ ] Get all artists
-    - [ ] Get artist By Id
+- [x] Rishik vardhan
+    - [x] Get all artists
+    - [x] Get artist By Id
 - [x] Shashi Preetham Ganta
     - [x] Get top artists
 - [ ] Rishwanth Katpally
