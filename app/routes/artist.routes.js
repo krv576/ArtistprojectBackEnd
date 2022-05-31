@@ -9,5 +9,7 @@ module.exports = app => {
   router.get("/:id", artists.findOne);
   // Retrieve all top Artists
   router.get("/top", artists.findAllTopArtists);
+  // Update a Artist with id
+  router.put("/:id", artists.update);
   app.use('/api/artists', router);
 };

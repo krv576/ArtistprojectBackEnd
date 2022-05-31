@@ -22,8 +22,8 @@ This is the artist Project repository for the back end
     - [x] Get artist By Id
 - [x] Shashi Preetham Ganta
     - [x] Get top artists
-- [ ] Rishwanth Katpally
-    - [ ] Update artist By Id
+- [x] Rishwanth Katpally
+    - [x] Update artist By Id
 - [ ] Sahithi Kommineni
     - [ ] Delete artist By Id
     - [ ] Delete all artists
