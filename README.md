@@ -44,9 +44,9 @@ This is the artist Project repository for the back end
 ## Albums ✓
 - [x] Shashi Preetham Ganta
     - [x] Create album
-- [ ] Rishwanth Katpally
-    - [ ] Get all albums
-    - [ ] Get album By Id
+- [x] Rishwanth Katpally
+    - [x] Get all albums
+    - [x] Get album By Id
 - [ ] Sahithi Kommineni
     - [ ] Update album By Id
 - [ ] Nagarjuna Reddy Potlapalli
