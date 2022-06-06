@@ -89,6 +89,45 @@ exports.update = (req, res) => {
       });
     });
 };
+// Delete a Track with the specified id in the request
+exports.delete = (req, res) => {
+  const id = req.params.id;
+  Track.destroy({
+    where: { id: id }
+  })
+    .then(num => {
+      if (num == 1) {
+        res.send({
+          message: "Track was deleted successfully!"
+        });
+      } else {
+        res.status(405).send({
+          message: `Cannot delete Track with id=${id}. Maybe Track was not found!`
+        });
+      }
+    })
+    .catch(err => {
+      res.status(500).send({
+        message: "Could not delete Track with id=" + id
+      });
+    });
+};
+// Delete all Tracks from the database.
+exports.deleteAll = (req, res) => {
+  Track.destroy({
+    where: {},
+    truncate: false
+  })
+    .then(nums => {
+      res.send({ message: `${nums} Tracks were deleted successfully!` });
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while removing all tracks."
+      });
+    });
+};
 // Find all old melodoes
 exports.findAllOldMelodies = (req, res) => {
   Track.findAll({ where: { oldMelody: true } })
