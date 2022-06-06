@@ -109,3 +109,19 @@ exports.delete = (req, res) => {
       });
     });
 };
+// Delete all Albums from the database.
+exports.deleteAll = (req, res) => {
+  Album.destroy({
+    where: {},
+    truncate: false
+  })
+    .then(nums => {
+      res.send({ message: `${nums} Albums were deleted successfully!` });
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while removing all albums."
+      });
+    });
+};

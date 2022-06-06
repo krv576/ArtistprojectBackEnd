@@ -51,8 +51,8 @@ This is the artist Project repository for the back end
     - [x] Update album By Id
 - [x] Nagarjuna Reddy Potlapalli
     - [x] Delete album By Id
-- [ ] Rishik vardhan
-    - [ ] Delete all albums
+- [x] Rishik vardhan
+    - [x] Delete all albums
 
 ## Tracks ✓
 - [ ] Rishwanth Katpally
