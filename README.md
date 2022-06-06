@@ -31,8 +31,8 @@ This is the artist Project repository for the back end
 ## Genres ✓
 - [x] Rishik vardhan
     - [x] Create genre
-- [ ] Shashi Preetham Ganta
-    - [ ] Get all genres
+- [x] Shashi Preetham Ganta
+    - [x] Get all genres
 - [ ] Rishwanth Katpally
     - [ ] Update genre By Id
 - [ ] Sahithi Kommineni

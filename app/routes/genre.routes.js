@@ -3,5 +3,7 @@ module.exports = app => {
   var router = require("express").Router();
   // Create a new Genre
   router.post("/", genres.create);
+  // Retrieve all Genres
+  router.get("/", genres.findAll);
   app.use('/api/genres', router);
 };
