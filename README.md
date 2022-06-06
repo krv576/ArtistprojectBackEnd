@@ -35,8 +35,8 @@ This is the artist Project repository for the back end
     - [x] Get all genres
 - [x] Rishwanth Katpally
     - [x] Update genre By Id
-- [ ] Sahithi Kommineni
-    - [ ] Get genre By Id
-    - [ ] Delete genre By Id
+- [x] Sahithi Kommineni
+    - [x] Get genre By Id
+    - [x] Delete genre By Id
 - [ ] Nagarjuna Reddy Potlapalli
     - [ ] Delete all genres
