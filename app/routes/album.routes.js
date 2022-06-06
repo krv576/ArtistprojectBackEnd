@@ -7,5 +7,7 @@ module.exports = app => {
   router.get("/", albums.findAll);
   // Retrieve a single Album with id
   router.get("/:id", albums.findOne);
+  // Update a Album with id
+  router.put("/:id", albums.update);
   app.use('/api/albums', router);
 };
