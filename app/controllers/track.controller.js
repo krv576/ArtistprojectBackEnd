@@ -4,7 +4,7 @@ const Op = db.Sequelize.Op;
 // Create and Save a new Track
 exports.create = (req, res) => {
   // Validate request
-  if (!req.body.name || !req.body.length || !req.body.fileName || !req.body.albumId || !req.body.artistId || !req.body.genreId) {
+  if (!req.body.name || !req.body.length || !req.body.fileName /* || !req.body.albumId || !req.body.artistId || !req.body.genreId */) {
     res.status(400).send({
       message: "Content can not be empty!"
     });
@@ -44,6 +44,21 @@ exports.findAll = (req, res) => {
       res.status(500).send({
         message:
           err.message || "Some error occurred while retrieving tracks."
+      });
+    });
+};
+// Retrieve all Tracks By Genre Id from the database.
+exports.findAllTracksByGenre = (req, res) => {
+  const genreId = req.params.genreId;
+  var condition = genreId ? { genreId: { [Op.like]: `%${genreId}%` } } : null;
+  Track.findAll({ where: condition })
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving tracks by genre"
       });
     });
 };
