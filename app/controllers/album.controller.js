@@ -43,6 +43,20 @@ exports.findAll = (req, res) => {
           err.message || "Some error occurred while retrieving albums."
       });
     });
+};// Retrieve all Genre Albums from the database.
+exports.findGenreAlbums = (req, res) => {
+  const genreId = req.params.genreId;
+  var condition = genreId ? { genreId: { [Op.like]: `%${genreId}%` } } : null;
+  Album.findAll({ where: condition })
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving genres."
+      });
+    });
 };
 // Find a single Album with an id
 exports.findOne = (req, res) => {

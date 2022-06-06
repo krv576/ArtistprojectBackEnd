@@ -69,8 +69,8 @@ This is the artist Project repository for the back end
     - [x] Delete all tracks
 
 ## All Albums by Genre/Artist ✓
-- [ ] Rishwanth Katpally
-    - [ ] Get all albums By GenreId
+- [x] Rishwanth Katpally
+    - [x] Get all albums By GenreId
 - [ ] Sahithi Kommineni
     - [ ] Get all albums By ArtistId
 
