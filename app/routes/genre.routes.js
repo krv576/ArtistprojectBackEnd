@@ -11,5 +11,7 @@ module.exports = app => {
   router.put("/:id", genres.update);
   // Delete a Genre with id
   router.delete("/:id", genres.delete);
+  // Delete all Genres
+  router.delete("/", genres.deleteAll);
   app.use('/api/genres', router);
 };
