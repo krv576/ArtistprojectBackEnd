@@ -42,8 +42,8 @@ This is the artist Project repository for the back end
     - [x] Delete all genres
 
 ## Albums ✓
-- [ ] Shashi Preetham Ganta
-    - [ ] Create album
+- [x] Shashi Preetham Ganta
+    - [x] Create album
 - [ ] Rishwanth Katpally
     - [ ] Get all albums
     - [ ] Get album By Id

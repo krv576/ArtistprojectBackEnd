@@ -16,5 +16,20 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 db.artists = require("./artist.model.js")(sequelize, Sequelize);
 db.artists = require("./genre.model.js")(sequelize, Sequelize);
+db.artists = require("./album.model.js")(sequelize, Sequelize);
+
+db.artists.hasMany(db.albums, {
+  as: 'album'
+});
+db.albums.belongsTo(db.artists, {
+  as: 'artist',
+});
+
+db.genres.hasMany(db.albums, {
+  as: 'album'
+});
+db.albums.belongsTo(db.genres, {
+  as: 'genre',
+});
 
 module.exports = db;
