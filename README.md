@@ -55,8 +55,8 @@ This is the artist Project repository for the back end
     - [x] Delete all albums
 
 ## Tracks ✓
-- [ ] Rishwanth Katpally
-    - [ ] Create Track
+- [x] Rishwanth Katpally
+    - [x] Create Track
 - [ ] Sahithi Kommineni
     - [ ] Get all tracks
     - [ ] Get track By Id
