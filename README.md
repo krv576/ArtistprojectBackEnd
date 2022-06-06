@@ -64,6 +64,6 @@ This is the artist Project repository for the back end
     - [x] Get old melodies
 - [x] Rishik vardhan
     - [x] Update track By Id
-- [ ] Shashi Preetham Ganta
-    - [ ] Delete track By Id
-    - [ ] Delete all tracks
+- [x] Shashi Preetham Ganta
+    - [x] Delete track By Id
+    - [x] Delete all tracks

@@ -11,5 +11,9 @@ module.exports = app => {
   router.get("/:id", tracks.findOne);
   // Update a Track with id
   router.put("/:id", tracks.update);
+  // Delete a Track with id
+  router.delete("/:id", tracks.delete);
+  // Delete all tracks
+  router.delete("/", tracks.deleteAll);
   app.use('/api/tracks', router);
 };
