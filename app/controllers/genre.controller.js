@@ -106,3 +106,19 @@ exports.delete = (req, res) => {
       });
     });
 };
+// Delete all Genres from the database.
+exports.deleteAll = (req, res) => {
+  Genre.destroy({
+    where: {},
+    truncate: false
+  })
+    .then(nums => {
+      res.send({ message: `${nums} Genres were deleted successfully!` });
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while removing all genres."
+      });
+    });
+};

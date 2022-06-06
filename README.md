@@ -38,5 +38,5 @@ This is the artist Project repository for the back end
 - [x] Sahithi Kommineni
     - [x] Get genre By Id
     - [x] Delete genre By Id
-- [ ] Nagarjuna Reddy Potlapalli
-    - [ ] Delete all genres
+- [x] Nagarjuna Reddy Potlapalli
+    - [x] Delete all genres
