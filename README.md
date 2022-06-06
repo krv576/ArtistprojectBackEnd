@@ -49,8 +49,8 @@ This is the artist Project repository for the back end
     - [x] Get album By Id
 - [x] Sahithi Kommineni
     - [x] Update album By Id
-- [ ] Nagarjuna Reddy Potlapalli
-    - [ ] Delete album By Id
+- [x] Nagarjuna Reddy Potlapalli
+    - [x] Delete album By Id
 - [ ] Rishik vardhan
     - [ ] Delete all albums
 

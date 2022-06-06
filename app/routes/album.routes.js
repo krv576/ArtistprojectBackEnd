@@ -9,5 +9,7 @@ module.exports = app => {
   router.get("/:id", albums.findOne);
   // Update a Album with id
   router.put("/:id", albums.update);
+  // Delete a Album with id
+  router.delete("/:id", albums.delete);
   app.use('/api/albums', router);
 };
