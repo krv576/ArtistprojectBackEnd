@@ -66,3 +66,16 @@ exports.findOne = (req, res) => {
       });
     });
 };
+// Find all old melodoes
+exports.findAllOldMelodies = (req, res) => {
+  Track.findAll({ where: { oldMelody: true } })
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving top artists."
+      });
+    });
+};
