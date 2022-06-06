@@ -57,9 +57,9 @@ This is the artist Project repository for the back end
 ## Tracks ✓
 - [x] Rishwanth Katpally
     - [x] Create Track
-- [ ] Sahithi Kommineni
-    - [ ] Get all tracks
-    - [ ] Get track By Id
+- [x] Sahithi Kommineni
+    - [x] Get all tracks
+    - [x] Get track By Id
 - [ ] Nagarjuna Reddy Potlapalli
     - [ ] Get old melodies
 - [ ] Rishik vardhan
