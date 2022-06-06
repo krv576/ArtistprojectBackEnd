@@ -9,5 +9,7 @@ module.exports = app => {
   router.get("/oldMelodies", tracks.findAllOldMelodies);
   // Retrieve a single Track with id
   router.get("/:id", tracks.findOne);
+  // Update a Track with id
+  router.put("/:id", tracks.update);
   app.use('/api/tracks', router);
 };
