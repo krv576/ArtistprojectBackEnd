@@ -41,6 +41,25 @@ exports.findAll = (req, res) => {
       });
     });
 };
+// Find a single Genre with an id
+exports.findOne = (req, res) => {
+  const id = req.params.id;
+  Genre.findByPk(id)
+    .then(data => {
+      if (data) {
+        res.send(data);
+      } else {
+        res.status(404).send({
+          message: `Cannot find Genre with id=${id}.`
+        });
+      }
+    })
+    .catch(err => {
+      res.status(500).send({
+        message: "Error retrieving Genre with id=" + id
+      });
+    });
+};
 // Update a Genre by the id in the request
 exports.update = (req, res) => {
   const id = req.params.id;
@@ -61,6 +80,29 @@ exports.update = (req, res) => {
     .catch(err => {
       res.status(500).send({
         message: "Error updating Genre with id=" + id
+      });
+    });
+};
+// Delete a Genre with the specified id in the request
+exports.delete = (req, res) => {
+  const id = req.params.id;
+  Genre.destroy({
+    where: { id: id }
+  })
+    .then(num => {
+      if (num == 1) {
+        res.send({
+          message: "Genre was deleted successfully!"
+        });
+      } else {
+        res.status(405).send({
+          message: `Cannot delete Genre with id=${id}. Maybe Genre was not found!`
+        });
+      }
+    })
+    .catch(err => {
+      res.status(500).send({
+        message: "Could not delete Genre with id=" + id
       });
     });
 };
