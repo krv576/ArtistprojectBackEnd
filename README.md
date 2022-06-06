@@ -62,8 +62,8 @@ This is the artist Project repository for the back end
     - [x] Get track By Id
 - [x] Nagarjuna Reddy Potlapalli
     - [x] Get old melodies
-- [ ] Rishik vardhan
-    - [ ] Update track By Id
+- [x] Rishik vardhan
+    - [x] Update track By Id
 - [ ] Shashi Preetham Ganta
     - [ ] Delete track By Id
     - [ ] Delete all tracks
