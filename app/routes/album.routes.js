@@ -7,6 +7,8 @@ module.exports = app => {
   router.get("/", albums.findAll);
   // Retrieve all Albuums with Genre id
   router.get("/genre/:genreId", albums.findGenreAlbums);
+  // Retrieve all Albuums with Artist id
+  router.get("/artist/:artistId", albums.findArtistAlbums);
   // Retrieve a single Album with id
   router.get("/:id", albums.findOne);
   // Update a Album with id

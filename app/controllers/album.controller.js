@@ -43,7 +43,8 @@ exports.findAll = (req, res) => {
           err.message || "Some error occurred while retrieving albums."
       });
     });
-};// Retrieve all Genre Albums from the database.
+};
+// Retrieve all Genre Albums from the database.
 exports.findGenreAlbums = (req, res) => {
   const genreId = req.params.genreId;
   var condition = genreId ? { genreId: { [Op.like]: `%${genreId}%` } } : null;
@@ -54,7 +55,22 @@ exports.findGenreAlbums = (req, res) => {
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while retrieving genres."
+          err.message || "Some error occurred while retrieving genre albums."
+      });
+    });
+};
+// Retrieve all Genre Albums from the database.
+exports.findArtistAlbums = (req, res) => {
+  const artistId = req.params.artistId;
+  var condition = artistId ? { artistId: { [Op.like]: `%${artistId}%` } } : null;
+  Album.findAll({ where: condition })
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving artist albums."
       });
     });
 };

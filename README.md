@@ -71,8 +71,8 @@ This is the artist Project repository for the back end
 ## All Albums by Genre/Artist ✓
 - [x] Rishwanth Katpally
     - [x] Get all albums By GenreId
-- [ ] Sahithi Kommineni
-    - [ ] Get all albums By ArtistId
+- [x] Sahithi Kommineni
+    - [x] Get all albums By ArtistId
 
 ## All Tracks by Genre/Artist/Album ✓
 - [ ] Nagarjuna Reddy Potlapalli
