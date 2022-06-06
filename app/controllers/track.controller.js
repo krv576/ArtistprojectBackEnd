@@ -77,6 +77,21 @@ exports.findAllTracksByArtist = (req, res) => {
       });
     });
 };
+// Retrieve all Tracks By Album Id from the database.
+exports.findAllTracksByAlbum = (req, res) => {
+  const albumId = req.params.albumId;
+  var condition = albumId ? { albumId: { [Op.like]: `%${albumId}%` } } : null;
+  Track.findAll({ where: condition })
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving tracks by album"
+      });
+    });
+};
 // Find a single Track with an id
 exports.findOne = (req, res) => {
   const id = req.params.id;

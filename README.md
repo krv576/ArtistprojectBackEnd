@@ -79,5 +79,5 @@ This is the artist Project repository for the back end
     - [x] Get all tracks By GenreId
 - [x] Rishik vardhan
     - [x] Get all tracks By ArtistId
-- [ ] Shashi Preetham Ganta
-    - [ ] Get all tracks By AlbumId
+- [x] Shashi Preetham Ganta
+    - [x] Get all tracks By AlbumId
