@@ -67,3 +67,17 @@ This is the artist Project repository for the back end
 - [x] Shashi Preetham Ganta
     - [x] Delete track By Id
     - [x] Delete all tracks
+
+## All Albums by Genre/Artist ✓
+- [ ] Rishwanth Katpally
+    - [ ] Get all albums By GenreId
+- [ ] Sahithi Kommineni
+    - [ ] Get all albums By ArtistId
+
+## All Tracks by Genre/Artist/Album ✓
+- [ ] Nagarjuna Reddy Potlapalli
+    - [ ] Get all tracks By GenreId
+- [ ] Rishik vardhan
+    - [ ] Get all tracks By ArtistId
+- [ ] Shashi Preetham Ganta
+    - [ ] Get all tracks By AlbumId
