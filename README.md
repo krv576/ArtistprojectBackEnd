@@ -75,8 +75,8 @@ This is the artist Project repository for the back end
     - [x] Get all albums By ArtistId
 
 ## All Tracks by Genre/Artist/Album ✓
-- [ ] Nagarjuna Reddy Potlapalli
-    - [ ] Get all tracks By GenreId
+- [x] Nagarjuna Reddy Potlapalli
+    - [x] Get all tracks By GenreId
 - [ ] Rishik vardhan
     - [ ] Get all tracks By ArtistId
 - [ ] Shashi Preetham Ganta

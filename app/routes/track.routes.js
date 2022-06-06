@@ -7,6 +7,8 @@ module.exports = app => {
   router.get("/", tracks.findAll);
   // Retrieve all old melodies tracks
   router.get("/oldMelodies", tracks.findAllOldMelodies);
+  // Retrieve all tracks by genre id
+  router.get("/genre/:genreId", tracks.findAllTracksByGenre);
   // Retrieve a single Track with id
   router.get("/:id", tracks.findOne);
   // Update a Track with id
