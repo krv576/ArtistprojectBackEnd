@@ -60,8 +60,8 @@ This is the artist Project repository for the back end
 - [x] Sahithi Kommineni
     - [x] Get all tracks
     - [x] Get track By Id
-- [ ] Nagarjuna Reddy Potlapalli
-    - [ ] Get old melodies
+- [x] Nagarjuna Reddy Potlapalli
+    - [x] Get old melodies
 - [ ] Rishik vardhan
     - [ ] Update track By Id
 - [ ] Shashi Preetham Ganta
