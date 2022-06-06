@@ -63,3 +63,26 @@ exports.findOne = (req, res) => {
       });
     });
 };
+// Update a Album by the id in the request
+exports.update = (req, res) => {
+  const id = req.params.id;
+  Album.update(req.body, {
+    where: { id: id }
+  })
+    .then(num => {
+      if (num == 1) {
+        res.send({
+          message: "Album was updated successfully."
+        });
+      } else {
+        res.status(405).send({
+          message: `Cannot update Album with id=${id}. Maybe Album was not found or req.body is empty!`
+        });
+      }
+    })
+    .catch(err => {
+      res.status(500).send({
+        message: "Error updating Album with id=" + id
+      });
+    });
+};
