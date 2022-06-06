@@ -40,3 +40,30 @@ This is the artist Project repository for the back end
     - [x] Delete genre By Id
 - [x] Nagarjuna Reddy Potlapalli
     - [x] Delete all genres
+
+## Albums ✓
+- [ ] Shashi Preetham Ganta
+    - [ ] Create album
+- [ ] Rishwanth Katpally
+    - [ ] Get all albums
+    - [ ] Get album By Id
+- [ ] Sahithi Kommineni
+    - [ ] Update album By Id
+- [ ] Nagarjuna Reddy Potlapalli
+    - [ ] Delete album By Id
+- [ ] Rishik vardhan
+    - [ ] Delete all albums
+
+## Tracks ✓
+- [ ] Rishwanth Katpally
+    - [ ] Create Track
+- [ ] Sahithi Kommineni
+    - [ ] Get all tracks
+    - [ ] Get track By Id
+- [ ] Nagarjuna Reddy Potlapalli
+    - [ ] Get old melodies
+- [ ] Rishik vardhan
+    - [ ] Update track By Id
+- [ ] Shashi Preetham Ganta
+    - [ ] Delete track By Id
+    - [ ] Delete all tracks
