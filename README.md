@@ -29,8 +29,8 @@ This is the artist Project repository for the back end
     - [x] Delete all artists
 
 ## Genres ✓
-- [ ] Rishik vardhan
-    - [ ] Create genre
+- [x] Rishik vardhan
+    - [x] Create genre
 - [ ] Shashi Preetham Ganta
     - [ ] Get all genres
 - [ ] Rishwanth Katpally

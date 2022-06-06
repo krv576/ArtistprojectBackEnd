@@ -15,5 +15,6 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 db.artists = require("./artist.model.js")(sequelize, Sequelize);
+db.artists = require("./genre.model.js")(sequelize, Sequelize);
 
 module.exports = db;
