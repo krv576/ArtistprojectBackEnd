@@ -17,6 +17,7 @@ db.sequelize = sequelize;
 db.artists = require("./artist.model.js")(sequelize, Sequelize);
 db.artists = require("./genre.model.js")(sequelize, Sequelize);
 db.artists = require("./album.model.js")(sequelize, Sequelize);
+db.tracks = require("./track.model.js")(sequelize, Sequelize);
 
 db.artists.hasMany(db.albums, {
   as: 'album'
@@ -29,6 +30,28 @@ db.genres.hasMany(db.albums, {
   as: 'album'
 });
 db.albums.belongsTo(db.genres, {
+  as: 'genre',
+});
+
+
+db.albums.hasMany(db.tracks, {
+  as: 'track'
+});
+db.tracks.belongsTo(db.albums, {
+  as: 'album',
+});
+
+db.artists.hasMany(db.tracks, {
+  as: 'track'
+});
+db.tracks.belongsTo(db.artists, {
+  as: 'artist',
+});
+
+db.genres.hasMany(db.tracks, {
+  as: 'track'
+});
+db.tracks.belongsTo(db.genres, {
   as: 'genre',
 });
 
