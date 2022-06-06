@@ -75,7 +75,7 @@ This is the artist Project repository for the back end
     - [x] Get all albums By ArtistId
 
 ## All Tracks by Genre/Artist/Album ✓
-- [x] Nagarjuna Reddy Potlapalli
+- [x] Nagarjuna Reddy Potlapalli (Reviewed the pull request created by Sahithi)
     - [x] Get all tracks By GenreId
 - [ ] Rishik vardhan
     - [ ] Get all tracks By ArtistId
