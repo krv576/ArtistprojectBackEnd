@@ -41,3 +41,26 @@ exports.findAll = (req, res) => {
       });
     });
 };
+// Update a Genre by the id in the request
+exports.update = (req, res) => {
+  const id = req.params.id;
+  Genre.update(req.body, {
+    where: { id: id }
+  })
+    .then(num => {
+      if (num == 1) {
+        res.send({
+          message: "Genre was updated successfully."
+        });
+      } else {
+        res.status(405).send({
+          message: `Cannot update Genre with id=${id}. Maybe Genre was not found or req.body is empty!`
+        });
+      }
+    })
+    .catch(err => {
+      res.status(500).send({
+        message: "Error updating Genre with id=" + id
+      });
+    });
+};

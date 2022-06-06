@@ -5,5 +5,7 @@ module.exports = app => {
   router.post("/", genres.create);
   // Retrieve all Genres
   router.get("/", genres.findAll);
+  // Update a Genre with id
+  router.put("/:id", genres.update);
   app.use('/api/genres', router);
 };
