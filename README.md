@@ -33,8 +33,8 @@ This is the artist Project repository for the back end
     - [x] Create genre
 - [x] Shashi Preetham Ganta
     - [x] Get all genres
-- [ ] Rishwanth Katpally
-    - [ ] Update genre By Id
+- [x] Rishwanth Katpally
+    - [x] Update genre By Id
 - [ ] Sahithi Kommineni
     - [ ] Get genre By Id
     - [ ] Delete genre By Id
