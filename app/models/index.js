@@ -15,8 +15,8 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 db.artists = require("./artist.model.js")(sequelize, Sequelize);
-db.artists = require("./genre.model.js")(sequelize, Sequelize);
-db.artists = require("./album.model.js")(sequelize, Sequelize);
+db.genres = require("./genre.model.js")(sequelize, Sequelize);
+db.albums = require("./album.model.js")(sequelize, Sequelize);
 db.tracks = require("./track.model.js")(sequelize, Sequelize);
 
 db.artists.hasMany(db.albums, {
