@@ -25,6 +25,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to artist project web application." });
 });
 require("./app/routes/artist.routes")(app);
+require("./app/routes/genre.routes")(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
