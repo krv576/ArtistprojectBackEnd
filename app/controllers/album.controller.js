@@ -37,7 +37,7 @@ exports.findAll = (req, res) => {
   var conditionYear = year ? { year: { [Op.like]: `%${year}%` } } : null;
   let condition = null;
   if (conditionName && conditionYear) {
-    condition = {[Op.and]: [conditionName, conditionYear]}
+    condition = {[Op.or]: [conditionName, conditionYear]}
   } else if (conditionName) {
     condition = conditionName
   } else if (conditionYear) {
