@@ -32,7 +32,17 @@ exports.create = (req, res) => {
 // Retrieve all Albums from the database.
 exports.findAll = (req, res) => {
   const name = req.query.name;
-  var condition = name ? { name: { [Op.like]: `%${name}%` } } : null;
+  var conditionName = name ? { name: { [Op.like]: `%${name}%` } } : null;
+  const year = req.query.year;
+  var conditionYear = year ? { year: { [Op.like]: `%${year}%` } } : null;
+  let condition = null;
+  if (conditionName && conditionYear) {
+    condition = {[Op.and]: [conditionName, conditionYear]}
+  } else if (conditionName) {
+    condition = conditionName
+  } else if (conditionYear) {
+    condition = conditionYear;
+  }
   Album.findAll({ where: condition })
     .then(data => {
       res.send(data);
@@ -47,7 +57,19 @@ exports.findAll = (req, res) => {
 // Retrieve all Genre Albums from the database.
 exports.findGenreAlbums = (req, res) => {
   const genreId = req.params.genreId;
-  var condition = genreId ? { genreId: { [Op.like]: `%${genreId}%` } } : null;
+  var conditionGenre = genreId ? { genreId: { [Op.like]: `%${genreId}%` } } : null;
+  const name = req.query.name;
+  var conditionName = name ? { name: { [Op.like]: `%${name}%` } } : null;
+  const year = req.query.year;
+  var conditionYear = year ? { year: { [Op.like]: `%${year}%` } } : null;
+  let condition = conditionGenre;
+  if (conditionName && conditionYear) {
+    condition = {[Op.and]: [conditionGenre, conditionName, conditionYear]}
+  } else if (conditionName) {
+    condition = {[Op.and]: [conditionGenre, conditionName]}
+  } else if (conditionYear) {
+    condition = {[Op.and]: [conditionGenre, conditionYear]}
+  }
   Album.findAll({ where: condition })
     .then(data => {
       res.send(data);
@@ -62,7 +84,19 @@ exports.findGenreAlbums = (req, res) => {
 // Retrieve all Genre Albums from the database.
 exports.findArtistAlbums = (req, res) => {
   const artistId = req.params.artistId;
-  var condition = artistId ? { artistId: { [Op.like]: `%${artistId}%` } } : null;
+  var conditionArtist = artistId ? { artistId: { [Op.like]: `%${artistId}%` } } : null;
+  const name = req.query.name;
+  var conditionName = name ? { name: { [Op.like]: `%${name}%` } } : null;
+  const year = req.query.year;
+  var conditionYear = year ? { year: { [Op.like]: `%${year}%` } } : null;
+  let condition = conditionArtist;
+  if (conditionName && conditionYear) {
+    condition = {[Op.and]: [conditionArtist, conditionName, conditionYear]}
+  } else if (conditionName) {
+    condition = {[Op.and]: [conditionArtist, conditionName]}
+  } else if (conditionYear) {
+    condition = {[Op.and]: [conditionArtist, conditionYear]}
+  }
   Album.findAll({ where: condition })
     .then(data => {
       res.send(data);
